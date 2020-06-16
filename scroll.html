@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        height: 20px;
+        outline: none;
+      }
+      button + button {
+        margin-top: 5px;
+      }
+      button span {
+        display: block;
+        width: 0;
+        height: 0;
+      }
+      #scrollUp span {
+        border-bottom: 10px solid #000;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      #scrollDown span {
+        border-top: 10px solid #000;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="scrollUp"><span></span></button>
+    <button id="scrollDown"><span></span></button>
+    <script src="scroll.js"></script>
+  </body>
+</html>
